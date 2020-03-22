@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lz78 visualizer</title>
+    <link rel="stylesheet" href="animate.min.css">
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <style>
+        *{
+            transition: .3s all ease-in-out;
+            font-family: 'Source Sans Pro', sans-serif;
+            text-align: center;
+        }
+        #text{
+            text-align: center;
+            font-size: 50px;
+        }
+        #solution{
+            text-align: center;
+        }
+        span{
+            display: inline-block;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        #input{
+            resize: none;
+            width: 90%;
+            display: block;
+            margin: 10px auto;
+            border: #339EFF 2px solid;
+            outline: none;
+            padding: 10px;
+        }
+        #inputDiv{
+            text-align: center;
+        }
+        #submit{
+            margin: 10px auto;
+            border: #339EFF 2px solid;
+            padding: 10px;
+            cursor: pointer;
+            background: white;
+
+        }
+        #submit:hover{
+            background-color: #E9E9E9;
+        }
+        #index{
+            border: 3px solid #339EFF;
+        }
+        #entry{
+            
+            border: 3px solid #339EFF;
+            border-left: none;
+        }
+        footer{
+            position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+        }
+    </style>
+</head>
+<body>
+    <div id="inputDiv">
+        <textarea  id="input" cols="30" rows="1"></textarea>
+        <button id="submit">visualize LZ78</button>
+    </div>
+
+    <div id="text">
+
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div id="solution">
+  
+            </div>
+        </div>
+        <div class="co-md-6">
+            <h1>Dictionary</h1>
+            <div id="dictionary">
+                <div class="row">
+                    <div class="col-md-6" id="index" style="padding: 0;">
+                        <h1 style=" border-bottom: 3px solid #339EFF;padding: 10px;" >Index</h1>
+                    </div>
+                    <div class="col-md-6" id="entry" style="padding: 0;">
+                        <h1 style=" border-bottom: 3px solid #339EFF;padding: 10px;">Entry</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>made with love <span style="color: #339EFF; font-size: inherit;"> &copy; bahaaEldeen</span></footer>
+    <script src="lz78.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
