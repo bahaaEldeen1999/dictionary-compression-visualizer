@@ -36,6 +36,8 @@ function addSol(index,char){
 function clear(){
     parent.innerHTML = "";
     solution.innerHTML = "";
+    entryCol.innerHTML = '<h1 style=" border-bottom: 3px solid #339EFF;padding: 10px;">Entry</h1>'
+    indexCol.innerHTML = '<h1 style=" border-bottom: 3px solid #339EFF;padding: 10px;">Index</h1>'
 }
 
 function delay(ms) {
