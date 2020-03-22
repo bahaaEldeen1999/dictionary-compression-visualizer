@@ -1,5 +1,6 @@
 # dictionary-compression-visualizer
 visualize dictionary compression algorithms 
+link to live website : https://dictionary-compression-visualizer.netlify.com/
 currently support LZ78 encoding
 
 Steps to use it: 
