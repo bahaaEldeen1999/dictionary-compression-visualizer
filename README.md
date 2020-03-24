@@ -1,7 +1,7 @@
 # dictionary-compression-visualizer
-visualize dictionary compression algorithms 
-link to live website : https://dictionary-compression-visualizer.netlify.com/
-currently support LZ78 encoding
+visualize dictionary compression algorithms <br>
+link to live website : <a target="_blank">https://dictionary-compression-visualizer.netlify.com/</a><br>
+currently support LZ78 encoding and decoding
 
 Steps to use it: 
 
@@ -20,3 +20,7 @@ enjoy your visualizations where you have step by step encoding where red refer t
 final result where you will get the temporary dictionary and the output tags 
 
 ![final-result](screenshots/finalresult.png)
+
+UPDATE : 
+- you can now visualize the decoding process realtime with highlight on the current processing tag and different highlight for processed tags<br>
+- some styles have been changed   
