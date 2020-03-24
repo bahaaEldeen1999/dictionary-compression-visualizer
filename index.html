@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <style>
         *{
-            transition: .3s all ease-in-out;
+            transition: .1s all ease-in-out;
             font-family: 'Source Sans Pro', sans-serif;
             text-align: center;
         }
@@ -38,7 +38,7 @@
         #inputDiv{
             text-align: center;
         }
-        #submit{
+        button{
             margin: 10px auto;
             border: #339EFF 2px solid;
             padding: 10px;
@@ -46,7 +46,7 @@
             background: white;
 
         }
-        #submit:hover{
+        button:hover{
             background-color: #E9E9E9;
         }
         #index{
@@ -59,16 +59,16 @@
         }
         footer{
             position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;            /* Footer height */
+            bottom: 0;
+            width: 100%;
+            height: 2.5rem;            /* Footer height */
         }
     </style>
 </head>
 <body>
     <div id="inputDiv">
         <textarea  id="input" cols="30" rows="1"></textarea>
-        <button id="submit">visualize LZ78</button>
+        <button id="submit">visualize LZ78 Encoding</button>
     </div>
 
     <div id="text">
@@ -93,7 +93,9 @@
                 </div>
             </div>
         </div>
+        
     </div>
+    <button id="decode">visualize Decode</button>
     <footer>made with love <span style="color: #339EFF; font-size: inherit;"> &copy; bahaaEldeen</span></footer>
     <script src="lz78.js"></script>
     <script src="app.js"></script>
